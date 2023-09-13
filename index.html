@@ -83,7 +83,7 @@
   <script>
     let bar = document.getElementById("icon");
     let menu = document.getElementById("menu");
-    let navbar = document.getElementById("menu")
+    // let navbar = document.getElementById("menu")
 
     bar.addEventListener("click", function () {
       if (bar.className === "fa fa-bars") {
@@ -100,8 +100,33 @@
 
 
     bar.addEventListener("click", function () {
-      document.getElementById("menu").style.display="block";
+      document.getElementById("menu").style.display = "block";
     })
+
+
+
+
+
+    var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    // document.getElementById("menu").style.right = 0;
+  } else {
+    document.getElementById("menu").style.right = "-1000px";
+    bar.className = "fa fa-bars";
+  }
+  prevScrollpos = currentScrollPos;
+}
+
+
+
+
+
+
+
+
+
   </script>
 
 

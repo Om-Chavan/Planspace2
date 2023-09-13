@@ -8,6 +8,7 @@
 
 html {
   scroll-behavior: smooth;
+  width: 100%;
 }
 
 /*----global ----*/
@@ -48,7 +49,7 @@ header {
 
 header .container_content {
   background-color: rgba(0, 0, 0, 0.4);
-  height: 100vh;
+  /* height: 100%; */
 }
 
 header nav {
@@ -208,7 +209,7 @@ header .home .item .item_box:hover img {
     top: -20px;
     position: fixed;
     width: 70%;
-    height: 100%;
+    height: 600%;
     place-items: center;
   }
 
@@ -657,7 +658,9 @@ footer .content li {
 
   .flex1 {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    /* flex-direction: column; */
+
   }
 
   .flex {
@@ -675,12 +678,22 @@ footer .content li {
   }
 
   header .icon i {
-    font-size: 15px;
-    margin-right: 10px;
+    font-size: 25px;
+    margin-right: 40px;
   }
 
   header .icon label {
-    display: none;
+    /* display: flex;
+    justify-content: space-between; */
+    display: block;
+  }
+
+  header .icon  {
+    display: flex;
+    justify-content: space-around;
+    /* flex-direction: column-reverse; */
+    flex-wrap: wrap;
+    display: block;
   }
 
   header .home h3 {
