@@ -43,7 +43,7 @@ html {
 /*----global ----*/
 header {
   background-image: url("../image/back.jpeg");
-  background-size:cover;
+  background-size: cover;
   height: 100%;
 }
 
@@ -193,6 +193,25 @@ header .home .item .item_box:hover img {
 
 @media only screen and (max-width: 800px) {
 
+
+  .allbox {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .box1 {
+    display: flex;
+    padding: 2%;
+
+    flex-direction: row;
+  }
+
+  .box2 {
+    display: flex;
+    padding: 2%;
+    flex-direction: row;
+  }
+
   /*---------------header--------*/
   .grid {
     grid-template-columns: repeat(1, 1fr);
@@ -209,7 +228,8 @@ header .home .item .item_box:hover img {
     top: -20px;
     position: fixed;
     width: 70%;
-    height: 600%;
+    margin: 20%;
+    height: 60%;
     place-items: center;
   }
 
@@ -611,6 +631,24 @@ footer .content li {
 /*---------------footer--------*/
 @media only screen and (max-width: 800px) {
 
+
+  .allbox {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .box1 {
+    display: flex;
+    padding: 2%;
+
+    flex-direction: row;
+  }
+
+  .box2 {
+    display: flex;
+    padding: 2%;
+    flex-direction: row;
+  }
   /*---------------Design--------*/
   .Design {
     text-align: left;
@@ -654,7 +692,25 @@ footer .content li {
 
 @media only screen and (max-width: 500px) {
 
-  
+
+  .allbox {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .box1 {
+    display: flex;
+    padding: 2%;
+
+    flex-direction: row;
+  }
+
+  .box2 {
+    display: flex;
+    padding: 2%;
+    flex-direction: row;
+  }
+
 
   .flex1 {
     display: flex;
@@ -688,7 +744,7 @@ footer .content li {
     display: block;
   }
 
-  header .icon  {
+  header .icon {
     display: flex;
     justify-content: space-around;
     /* flex-direction: column-reverse; */
@@ -777,9 +833,29 @@ footer .content li {
 
 
 
-/* 
-@media only screen and (max-width: 600px) {
-  body {
-    background-color: white;
+
+
+@media only screen and (min-width: 800px) {
+  .allbox {
+    display: flex;
+    flex-direction: row;
   }
-} */
+
+  /* .box1 {
+    display: flex;
+    padding: 5%;
+
+    flex-direction: row;
+  } */
+
+  /* .box2 {
+    display: flex;
+    padding: 5%;
+    flex-direction: row;
+  } */
+
+    header .icon i {
+    font-size: 25px;
+    margin-right: 20px;
+  }
+}
