@@ -54,8 +54,16 @@ header .container_content {
 
 header nav {
   display: flex;
+  border:solid black;
+
   justify-content: space-between;
+  
 }
+
+/* nav ul{
+  border:solid black;
+
+} */
 
 header .barnd h1 {
   font-size: 30px;
@@ -229,21 +237,21 @@ header .home .item .item_box:hover img {
     position: fixed;
     width: 70%;
     margin: 20%;
-    height: 60%;
+    height: 70%;
     place-items: center;
   }
-
+  
   header ul li {
     text-align: left;
     margin-top: 20px;
   }
-
+  
   header ul li a {
     font-size: 15px;
     font-family: sans-serif;
     color: black;
   }
-
+  
   header ul li a:hover {
     color: #12B0BB;
   }
@@ -345,7 +353,9 @@ h2 {
   position: absolute;
   width: 600px;
   height: 650px;
-  
+  /* border: 10px solid skyblue; */
+  /* left: 13.5%; */
+  /* margin-top: 30px; */
 }
 
 h5 {
@@ -714,7 +724,13 @@ footer .content li {
     display: flex;
     justify-content: space-around;
     /* flex-direction: column; */
+    /* padding-left: 5%; */
 
+  }
+  .box{
+    display: flex;
+    justify-content: space-around;
+    padding-left: 10%;
   }
 
   .flex {
@@ -732,20 +748,25 @@ footer .content li {
   }
 
   header .icon i {
+    /* display: flex; */
+    /* flex-direction: column; */
     font-size: 25px;
+    /* padding-left: 5%; */
     margin-right: 40px;
   }
-
+  
   header .icon label {
     /* display: flex;
     justify-content: space-between; */
     display: block;
   }
-
+  
   header .icon {
+    /* justify-content: space-between; */
     display: flex;
     justify-content: space-around;
     /* flex-direction: column-reverse; */
+    /* padding: 10%; */
     flex-wrap: wrap;
     display: block;
   }
